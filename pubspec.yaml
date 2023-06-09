@@ -1,0 +1,35 @@
+name: real_time_object_detection
+description: Gazi Universitesi Bitirme Projesi
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.1+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.7+5
+  camera: ^0.10.5+2
+  path: ^1.8.2
+  path_provider: ^2.0.15
+
+  google_mlkit_commons:
+#    path: ../google_mlkit_commons
+  google_mlkit_object_detection:
+    path: ../google_mlkit_object_detection
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/ml/
